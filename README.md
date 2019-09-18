@@ -1,3 +1,7 @@
+## Aula do dia 16/09/2019
+
+<a href="d3_update/scatterplot.html">notebook observable</a><br>
+
 ## Aula do dia 11/09/2019
 
 <a href="d3_scale/scatterplot.html">notebook observable</a><br>
