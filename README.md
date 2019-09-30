@@ -1,3 +1,7 @@
+## Aula do dia 30/09/2019
+
+<a href="d3_leaflet/index.html">notebook observable</a><br>
+
 ## Aula do dia 25/09/2019
 
 <a href="d3_crossfilter_2/index.html">notebook observable</a><br>
