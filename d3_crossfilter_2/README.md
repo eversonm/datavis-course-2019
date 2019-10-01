@@ -1,6 +1,6 @@
 # D3 com Crossfilter e DC.js (Parte 2)
 
-https://observablehq.com/@eversonm/d3-com-crossfilter-e-dc-js-parte-2@169
+https://observablehq.com/@eversonm/d3-com-crossfilter-e-dc-js-parte-2@177
 
 View this notebook in your browser by running a web server in this folder. For
 example:

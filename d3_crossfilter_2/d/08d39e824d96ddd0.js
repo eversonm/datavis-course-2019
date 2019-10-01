@@ -1,4 +1,4 @@
-// https://observablehq.com/@eversonm/d3-com-crossfilter-e-dc-js-parte-2@169
+// https://observablehq.com/@eversonm/d3-com-crossfilter-e-dc-js-parte-2@177
 export default function define(runtime, observer) {
   const main = runtime.module();
   main.variable(observer()).define(["md"], function(md){return(
@@ -46,9 +46,10 @@ cross.dimension(d => d3.timeHour(d.dtg))
   main.variable(observer("timeGroup")).define("timeGroup", ["timeDimension"], function(timeDimension){return(
 timeDimension.group()
 )});
-  main.variable(observer("buildvis")).define("buildvis", ["md","container","dc","dateDimension","d3"], function(md,container,dc,dateDimension,d3)
+  main.variable(observer("buildvis")).define("buildvis", ["md","container","dc","dateDimension","d3","magnitudeDimension","magGroup","depthDimension","depthGroup","dataset","timeDimension","timeGroup"], function(md,container,dc,dateDimension,d3,magnitudeDimension,magGroup,depthDimension,depthGroup,dataset,timeDimension,timeGroup)
 {
-  let view = md`${container('dc-table-graph','Dc Table Graph')}`
+  // let view = md`${container('dc-table-graph','Dc Table Graph')}`
+  let view = md`${container()}`
   let dcdataTable = dc.dataTable(view.querySelector("#dc-table-graph"))
   
   dcdataTable.width(960)
@@ -61,12 +62,8 @@ timeDimension.group()
            .sortBy(d => d.dtg)
            .order(d3.ascending)
   dcdataTable.render()
-  return view
-}
-);
-  main.variable(observer("barras1")).define("barras1", ["md","container","dc","d3","magnitudeDimension","magGroup"], function(md,container,dc,d3,magnitudeDimension,magGroup)
-{
-  let view = md`${container('magnitude-chart','Grafico de barras')}`
+  
+  
   let barChart = dc.barChart(view.querySelector("#magnitude-chart"))
   let xScale = d3.scaleLinear()
                   .domain([0,8])
@@ -87,22 +84,17 @@ timeDimension.group()
   // barChart.centerBar(true)
   barChart.gap(56)
   barChart.render() //necessario para todo grafico
-  return view
-}
-);
-  main.variable(observer("barras2")).define("barras2", ["md","container","dc","d3","depthDimension","depthGroup"], function(md,container,dc,d3,depthDimension,depthGroup)
-{
-  let view = md`${container('depth-chart','Grafico de barras')}`
-  let barChart = dc.barChart(view.querySelector("#depth-chart"))
-  let xScale = d3.scaleLinear()
+
+  let barChart2= dc.barChart(view.querySelector("#depth-chart"))
+  let xScale2= d3.scaleLinear()
                   .domain([0,100])
   // barChart.xAxis().ticks(5)
-  barChart.width(480)
+  barChart2.width(480)
            .height(150)
            .dimension(depthDimension)
            // .margins({top: 30, right: 50, bottom: 25, left: 40})
            // .renderArea(false)
-           .x(xScale)
+           .x(xScale2)
            .elasticY(true)
            // .xUnits(d3.timeDays)
            .renderHorizontalGridLines(true)
@@ -111,16 +103,11 @@ timeDimension.group()
            .group(depthGroup)
            // .xAxis().tickFormat(d3.format("d"))
   // barChart.centerBar(true)
-  barChart.gap(1)
-  barChart.render() //necessario para todo grafico
-  return view
-}
-);
-  main.variable(observer("barras3")).define("barras3", ["md","container","dc","d3","dataset","timeDimension","timeGroup"], function(md,container,dc,d3,dataset,timeDimension,timeGroup)
-{
-  let view = md`${container('time-chart','Grafico de barras')}`
+  barChart2.gap(1)
+  barChart2.render() //necessario para todo grafico
+  
   let lineChart = dc.lineChart(view.querySelector("#time-chart"))
-  let xScale = d3.scaleTime()
+  let xScale3= d3.scaleTime()
                   .domain(d3.extent(dataset, d => d.dtg))
   // barChart.xAxis().ticks(5)
   lineChart.width(960)
@@ -128,7 +115,7 @@ timeDimension.group()
            .dimension(timeDimension)
            // .margins({top: 30, right: 50, bottom: 25, left: 40})
            // .renderArea(false)
-           .x(xScale)
+           .x(xScale3)
            .elasticY(true)
            // .xUnits(d3.timeDays)
            .renderHorizontalGridLines(true)
