@@ -1,6 +1,6 @@
 # D3 com Crossfilter, DC.js e Leaflet
 
-https://observablehq.com/@eversonm/d3-com-crossfilter-dc-js-e-leaflet@198
+https://observablehq.com/@eversonm/d3-com-crossfilter-dc-js-e-leaflet/2@189
 
 View this notebook in your browser by running a web server in this folder. For
 example:
@@ -14,14 +14,14 @@ import this module directly into your application. To npm install:
 
 ~~~sh
 npm install @observablehq/runtime@4
-npm install https://api.observablehq.com/d/c87e2ad7d31c6a2a.tgz?v=3
+npm install https://api.observablehq.com/d/4b3c4c24a2deff3f.tgz?v=3
 ~~~
 
 Then, import your notebook and the runtime as:
 
 ~~~js
 import {Runtime, Inspector} from "@observablehq/runtime";
-import define from "@eversonm/d3-com-crossfilter-dc-js-e-leaflet";
+import define from "@eversonm/d3-com-crossfilter-dc-js-e-leaflet/2";
 ~~~
 
 To log the value of the cell named “foo”:
