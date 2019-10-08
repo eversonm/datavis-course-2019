@@ -1,0 +1,14 @@
+{
+  "name": "@eversonm/visualizando-crimes-de-chicago",
+  "main": "d/b66f3dd16728c8a9.js",
+  "version": "341.0.0",
+  "homepage": "https://observablehq.com/@eversonm/visualizando-crimes-de-chicago",
+  "author": {
+    "name": "eversonm",
+    "url": "https://observablehq.com/@eversonm"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
