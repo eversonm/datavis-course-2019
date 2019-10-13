@@ -1,0 +1,14 @@
+{
+  "name": "@eversonm/os-miseraveis",
+  "main": "d/964733bf23356896.js",
+  "version": "120.0.0",
+  "homepage": "https://observablehq.com/@eversonm/os-miseraveis",
+  "author": {
+    "name": "eversonm",
+    "url": "https://observablehq.com/@eversonm"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
