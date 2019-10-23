@@ -1,37 +1,44 @@
-## Aula do dia 09/10/2019 pt.2
+## Aula do dia 16/10/2019 pt.2 - Homicídios em Fortaleza 2012
+
+<a href="d3_color2/index.html">notebook observable</a><br>
+
+## Aula do dia 16/10/2019 pt.2 - Taxa de Desemprego nos EUA em agosto de 2016
+
+<a href="d3_color/index.html">notebook observable</a><br>
+
+## Aula do dia 09/10/2019 pt.2 - Os miseráveis
 
 <a href="d3_network2/index.html">notebook observable</a><br>
 
-## Aula do dia 09/10/2019 pt.1
+## Aula do dia 09/10/2019 pt.1 - Similar Song Network
 
 <a href="d3_network/index.html">notebook observable</a><br>
 
-## Aula do dia 30/09/2019 pt.2
+## Aula do dia 30/09/2019 pt.2 - Visualizando crimes de Chicago
 
 <a href="d3_leaflet2/index.html">notebook observable</a><br>
 
-## Aula do dia 30/09/2019 pt.1
+## Aula do dia 30/09/2019 pt.1 - D3 com Crossfilter, DC.js e Leaflet
 
 <a href="d3_leaflet/index.html">notebook observable</a><br>
 
-## Aula do dia 25/09/2019
+## Aula do dia 25/09/2019 - D3 com Crossfilter e DC.js (Parte 2)
 
 <a href="d3_crossfilter_2/index.html">notebook observable</a><br>
 
-## Aula do dia 23/09/2019
+## Aula do dia 23/09/2019 - D3 com Crossfilter e DC.js
 
 <a href="d3_crossfilter/index.html">notebook observable</a><br>
 
-## Aula do dia 16/09/2019
+## Aula do dia 16/09/2019 - Introdução ao D3 (Parte 3) - Updates e Transições
 
 <a href="d3_update/scatterplot.html">notebook observable</a><br>
 
-## Aula do dia 11/09/2019
+## Aula do dia 11/09/2019 - Introdução ao D3 (Parte 2) - Escalas e Eixos
 
 <a href="d3_scale/scatterplot.html">notebook observable</a><br>
 
-
-## Aula do dia 04/09/2019
+## Aula do dia 04/09/2019 - - Introdução ao D3 com Observable
 
 <a href="d3_intro/notebook.html">notebook observable</a><br>
 
