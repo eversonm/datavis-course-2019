@@ -1,3 +1,7 @@
+## Aula do dia 23/10/2019 - Taxa de desemprego nos EUA em agosto de 2016 (Parte 2)
+
+<a href="d3_interactive/index.html">notebook observable</a><br>
+
 ## Aula do dia 16/10/2019 pt.2 - Homicídios em Fortaleza 2012
 
 <a href="d3_color2/index.html">notebook observable</a><br>
